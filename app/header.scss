@@ -1,0 +1,29 @@
+@import "bourbon";
+@import "sass/vars";
+@import "sass/base";
+
+header {
+	padding-top: 30px;
+	margin-bottom: 100px;
+	.logo {
+		float: left;
+	}
+	.navigation {
+		float: right;
+		margin: 0;
+		padding-top: 10px;
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			margin-right: 120px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
+				color: #626262;
+				font-size: 1.4rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+.first_post {
+	margin-bottom: 100px;
+	&-bg {
+		margin-bottom: 50px;
+		img {
+			width: 100%;
+		}
+	}
+}
+.post_text {
+	.category,
+	.comment {
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: $category-font;
+			color: #b4ad9e;
+			font-size: 1.4rem;
+		}
+	}
+	h2 {
+		font-weight: 400;
+		font-size: 3rem;
+		color: #626262;
+	}
+	p {
+		font-size: 1.4rem;
+		color: #626262;
+		margin-bottom: 50px;
+	}
+	img {
+		width: 100%;
+	}
+	.share {
+		float: right;
+		li {
+			text-transform: uppercase;
+			display: inline-block;
+			margin-left: 20px;
+			color: #b4ad9e;
+			a {
+				text-decoration: none;
+				color: #b4ad9e;
+				&:hover {
+					color: #b4ad9e;
+				}
+			}
+		}
+	}
+}
+.post_photos {
+	padding-top: 50px;
+	img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	p.descr {
+		text-align: justify;
+	}
+}
+
+.post {
+	min-height: 650px;
+	margin-bottom: 25px;
+}
+.sign_up {
+	text-align: center;
+	background-color: #f0f0f0;
+	padding: 73px 0;
+	margin-bottom: 60px;
+	h2 {
+		letter-spacing: 3px;
+		margin-bottom: 50px;
+	}
+	input[type=email] {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid #000;
+		width: 310px;
+		padding: 5px 10px;
+		position: relative;
+		left: 20px;
+	}
+	input[type=submit] {
+		background-color: transparent;
+		outline: none;
+		border: none;
+		position: relative;
+		right: 20px;
+		background: url('../img/send.png') no-repeat right center;
+		width: 32px;
+		height: 17px;
+	}
+}
+button.more {
+	margin: 0 auto;
+	padding: 10px 25px;
+	border: 1px solid #000;
+	outline: none;
+	background-color: transparent;
+	display: block;
+	font-size: 2.4rem;
+	margin-bottom: 60px;
+}
+footer {
+	background-color: #f0f0f0;
+	padding: 20px 0;
+	ul {
+		display: inline-block;
+		li {
+			display: inline-block;
+			font-size: 1.4rem;
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+	}
+	.subscription {
+		float: right;
+	}
+}
+
+@import "single-post";
+@import "media";
